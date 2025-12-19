@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOISE REBELLION - Alt Rock Band</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&family=Nosifer&family=Butcherman&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="glitch" data-text="NOISE REBELLION">NOISE REBELLION</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#music" class="nav-link">MUSIC</a></li>
+                <li><a href="#videos" class="nav-link">VIDEOS</a></li>
+                <li><a href="#tour" class="nav-link">TOUR</a></li>
+                <li><a href="#merch" class="nav-link">MERCH</a></li>
+                <li><a href="#news" class="nav-link">NEWS</a></li>
+                <li><a href="#gallery" class="nav-link">GALLERY</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                <li><a href="#fan" class="nav-link">FAN ZONE</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1600779547877-be592ef5aad3" alt="Live Stage" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title glitch" data-text="NOISE REBELLION">NOISE REBELLION</h1>
+            <p class="hero-tagline">NOISE. TRUTH. REBELLION.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary glitch-btn" onclick="scrollToSection('music')">
+                    <i class="fas fa-play"></i> LISTEN NOW
+                </button>
+                <button class="btn-secondary" onclick="scrollToSection('tour')">
+                    <i class="fas fa-calendar"></i> TOUR DATES
+                </button>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title distorted" data-text="ABOUT THE REBELLION">ABOUT THE REBELLION</h2>
+            
+            <div class="about-content">
+                <div class="band-story">
+                    <h3 class="subsection-title">Our Story</h3>
+                    <p class="story-text">Born in the underground clubs of 2018, NOISE REBELLION emerged from the ashes of a broken system. We're not just a band - we're a movement. Our sound cuts through the noise of modern life, delivering raw truth through distorted guitars and thunderous drums.</p>
+                    <p class="story-text">From garage rehearsals to sold-out venues, we've never compromised our vision. Every chord strikes against conformity, every lyric challenges the status quo.</p>
+                </div>
+
+                <div class="band-members">
+                    <h3 class="subsection-title">The Rebels</h3>
+                    <div class="members-grid">
+                        <div class="member-card">
+                            <div class="member-image">
+                                <img src="https://images.unsplash.com/photo-1600528777391-4e35bf973e44" alt="Alex Thunder">
+                                <div class="member-overlay">
+                                    <h4>ALEX THUNDER</h4>
+                                    <p>Lead Vocals & Guitar</p>
+                                    <p class="member-quirk">"Music is my weapon"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-card">
+                            <div class="member-image">
+                                <img src="https://images.unsplash.com/photo-1723902701334-08b0fe53ff4c" alt="Sam Riot">
+                                <div class="member-overlay">
+                                    <h4>SAM RIOT</h4>
+                                    <p>Bass & Backing Vocals</p>
+                                    <p class="member-quirk">"Low frequencies, high energy"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-card">
+                            <div class="member-image">
+                                <img src="https://images.unsplash.com/photo-1558625332-9a35ee767f24" alt="Casey Storm">
+                                <div class="member-overlay">
+                                    <h4>CASEY STORM</h4>
+                                    <p>Drums & Percussion</p>
+                                    <p class="member-quirk">"Rhythm is rebellion"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-card">
+                            <div class="member-image">
+                                <img src="https://images.pexels.com/photos/1933589/pexels-photo-1933589.jpeg" alt="Jordan Chaos">
+                                <div class="member-overlay">
+                                    <h4>JORDAN CHAOS</h4>
+                                    <p>Lead Guitar & Synth</p>
+                                    <p class="member-quirk">"Chaos creates beauty"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="influences">
+                    <h3 class="subsection-title">Influences & Reviews</h3>
+                    <div class="influences-content">
+                        <div class="influences-list">
+                            <p><strong>Musical DNA:</strong> Nirvana, Pearl Jam, Soundgarden, Foo Fighters, Arctic Monkeys, The Strokes</p>
+                        </div>
+                        <div class="press-quotes">
+                            <blockquote>
+                                "NOISE REBELLION captures the raw energy of 90s grunge with a modern twist that hits like lightning." 
+                                <cite>- Rolling Stone</cite>
+                            </blockquote>
+                            <blockquote>
+                                "The most authentic alt rock sound we've heard in years. These guys don't just play music - they live it." 
+                                <cite>- NME</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MUSIC SECTION -->
+    <section id="music" class="section dark-section">
+        <div class="container">
+            <h2 class="section-title glitch" data-text="DISCOGRAPHY">DISCOGRAPHY</h2>
+            
+            <div class="albums-grid">
+                <div class="album-card featured">
+                    <div class="album-cover">
+                        <img src="https://images.unsplash.com/photo-1600779547877-be592ef5aad3" alt="Broken System Album">
+                        <div class="play-overlay">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="album-info">
+                        <h3>BROKEN SYSTEM</h3>
+                        <p class="album-type">Latest Album • 2024</p>
+                        <div class="album-links">
+                            <a href="#" class="streaming-link"><i class="fab fa-spotify"></i> Spotify</a>
+                            <a href="#" class="streaming-link"><i class="fab fa-apple"></i> Apple Music</a>
+                            <a href="#" class="streaming-link"><i class="fab fa-youtube"></i> YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-cover">
+                        <img src="https://images.unsplash.com/photo-1558625332-9a35ee767f24" alt="Underground Anthems">
+                        <div class="play-overlay">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="album-info">
+                        <h3>UNDERGROUND ANTHEMS</h3>
+                        <p class="album-type">EP • 2023</p>
+                        <div class="album-links">
+                            <a href="#" class="streaming-link"><i class="fab fa-spotify"></i></a>
+                            <a href="#" class="streaming-link"><i class="fab fa-apple"></i></a>
+                            <a href="#" class="streaming-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-cover">
+                        <img src="https://images.unsplash.com/photo-1723902701334-08b0fe53ff4c" alt="First Strike">
+                        <div class="play-overlay">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="album-info">
+                        <h3>FIRST STRIKE</h3>
+                        <p class="album-type">Debut Album • 2022</p>
+                        <div class="album-links">
+                            <a href="#" class="streaming-link"><i class="fab fa-spotify"></i></a>
+                            <a href="#" class="streaming-link"><i class="fab fa-apple"></i></a>
+                            <a href="#" class="streaming-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lyrics-section">
+                <h3 class="subsection-title">Latest Lyrics - "System Down"</h3>
+                <div class="lyrics-container">
+                    <div class="lyrics-text">
+                        <p><em>[Verse 1]</em></p>
+                        <p>Static on the radio, lies on every screen<br>
+                        They tell us how to think and feel, program what we dream<br>
+                        But we won't be silenced, won't be controlled<br>
+                        Our voices rise like thunder, our story will be told</p>
+                        
+                        <p><em>[Chorus]</em></p>
+                        <p>System down, system down<br>
+                        We're tearing up this ghost town<br>
+                        System down, system down<br>
+                        We'll build it up from the ground</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEOS SECTION -->
+    <section id="videos" class="section">
+        <div class="container">
+            <h2 class="section-title distorted" data-text="WATCH & DESTROY">WATCH & DESTROY</h2>
+            
+            <div class="videos-grid">
+                <div class="video-card featured">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1600779547877-be592ef5aad3" alt="System Down Music Video">
+                        <div class="play-overlay">
+                            <button class="play-btn large"><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="video-badge">NEW</div>
+                    </div>
+                    <div class="video-info">
+                        <h3>System Down - Official Music Video</h3>
+                        <p class="video-type">Music Video • 2024</p>
+                        <p class="video-description">Our latest single captures the raw energy of rebellion against conformity.</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1723902701334-08b0fe53ff4c" alt="Live at Underground">
+                        <div class="play-overlay">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Live at Underground Club</h3>
+                        <p class="video-type">Live Performance • 2024</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1558625332-9a35ee767f24" alt="Behind the Noise">
+                        <div class="play-overlay">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Behind the Noise - Studio Sessions</h3>
+                        <p class="video-type">Behind the Scenes • 2024</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1600528777391-4e35bf973e44" alt="Tour Diary">
+                        <div class="play-overlay">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Tour Diary 2023</h3>
+                        <p class="video-type">Documentary • 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOUR SECTION -->
+    <section id="tour" class="section dark-section">
+        <div class="container">
+            <h2 class="section-title glitch" data-text="REBELLION TOUR 2024">REBELLION TOUR 2024</h2>
+            
+            <div class="tour-dates">
+                <div class="tour-date upcoming">
+                    <div class="date-info">
+                        <div class="date">MAR<br><span>15</span></div>
+                        <div class="venue">
+                            <h3>The Underground</h3>
+                            <p>Los Angeles, CA</p>
+                            <p class="status sold-out">SOLD OUT</p>
+                        </div>
+                    </div>
+                    <div class="ticket-btn">
+                        <button class="btn-secondary disabled">SOLD OUT</button>
+                    </div>
+                </div>
+
+                <div class="tour-date upcoming">
+                    <div class="date-info">
+                        <div class="date">MAR<br><span>22</span></div>
+                        <div class="venue">
+                            <h3>Revolution Hall</h3>
+                            <p>Portland, OR</p>
+                            <p class="status">Few Tickets Left</p>
+                        </div>
+                    </div>
+                    <div class="ticket-btn">
+                        <button class="btn-primary">TICKETS</button>
+                    </div>
+                </div>
+
+                <div class="tour-date upcoming">
+                    <div class="date-info">
+                        <div class="date">MAR<br><span>28</span></div>
+                        <div class="venue">
+                            <h3>The Fillmore</h3>
+                            <p>San Francisco, CA</p>
+                            <p class="status">On Sale Now</p>
+                        </div>
+                    </div>
+                    <div class="ticket-btn">
+                        <button class="btn-primary">TICKETS</button>
+                    </div>
+                </div>
+
+                <div class="tour-date upcoming">
+                    <div class="date-info">
+                        <div class="date">APR<br><span>05</span></div>
+                        <div class="venue">
+                            <h3>The Metro</h3>
+                            <p>Chicago, IL</p>
+                            <p class="status">On Sale Now</p>
+                        </div>
+                    </div>
+                    <div class="ticket-btn">
+                        <button class="btn-primary">TICKETS</button>
+                    </div>
+                </div>
+
+                <div class="tour-date upcoming">
+                    <div class="date-info">
+                        <div class="date">APR<br><span>12</span></div>
+                        <div class="venue">
+                            <h3>Brooklyn Bowl</h3>
+                            <p>New York, NY</p>
+                            <p class="status">Pre-Sale</p>
+                        </div>
+                    </div>
+                    <div class="ticket-btn">
+                        <button class="btn-secondary">PRE-SALE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="past-tours">
+                <h3 class="subsection-title">Past Tours</h3>
+                <div class="past-tour-archive">
+                    <div class="archive-item">
+                        <h4>UNDERGROUND UPRISING TOUR 2023</h4>
+                        <p>25 cities • 30,000+ fans • Sold out venues</p>
+                    </div>
+                    <div class="archive-item">
+                        <h4>FIRST STRIKE TOUR 2022</h4>
+                        <p>15 cities • Our debut tour experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MERCH SECTION -->
+    <section id="merch" class="section">
+        <div class="container">
+            <h2 class="section-title distorted" data-text="REBEL GEAR">REBEL GEAR</h2>
+            
+            <div class="merch-grid">
+                <div class="merch-item featured">
+                    <div class="merch-image">
+                        <img src="https://images.unsplash.com/photo-1600779547877-be592ef5aad3" alt="Noise Rebellion T-Shirt">
+                        <div class="merch-overlay">
+                            <button class="btn-primary">QUICK VIEW</button>
+                        </div>
+                        <div class="merch-badge">BEST SELLER</div>
+                    </div>
+                    <div class="merch-info">
+                        <h3>NOISE REBELLION TEE</h3>
+                        <p class="price">$25.00</p>
+                        <p class="merch-description">Premium black tee with distressed logo</p>
+                    </div>
+                </div>
+
+                <div class="merch-item">
+                    <div class="merch-image">
+                        <img src="https://images.unsplash.com/photo-1558625332-9a35ee767f24" alt="Broken System Hoodie">
+                        <div class="merch-overlay">
+                            <button class="btn-primary">QUICK VIEW</button>
+                        </div>
+                    </div>
+                    <div class="merch-info">
+                        <h3>BROKEN SYSTEM HOODIE</h3>
+                        <p class="price">$45.00</p>
+                        <p class="merch-description">Heavyweight pullover hoodie</p>
+                    </div>
+                </div>
+
+                <div class="merch-item">
+                    <div class="merch-image">
+                        <img src="https://images.unsplash.com/photo-1723902701334-08b0fe53ff4c" alt="Vinyl Record">
+                        <div class="merch-overlay">
+                            <button class="btn-primary">QUICK VIEW</button>
+                        </div>
+                        <div class="merch-badge">LIMITED</div>
+                    </div>
+                    <div class="merch-info">
+                        <h3>BROKEN SYSTEM VINYL</h3>
+                        <p class="price">$35.00</p>
+                        <p class="merch-description">Limited edition red vinyl</p>
+                    </div>
+                </div>
+
+                <div class="merch-item">
+                    <div class="merch-image">
+                        <img src="https://images.unsplash.com/photo-1600528777391-4e35bf973e44" alt="Poster Pack">
+                        <div class="merch-overlay">
+                            <button class="btn-primary">QUICK VIEW</button>
+                        </div>
+                    </div>
+                    <div class="merch-info">
+                        <h3>TOUR POSTER SET</h3>
+                        <p class="price">$20.00</p>
+                        <p class="merch-description">3-pack collector posters</p>
+                    </div>
+                </div>
+
+                <div class="merch-item">
+                    <div class="merch-image">
+                        <img src="https://images.pexels.com/photos/1933589/pexels-photo-1933589.jpeg" alt="Bundle Pack">
+                        <div class="merch-overlay">
+                            <button class="btn-primary">QUICK VIEW</button>
+                        </div>
+                        <div class="merch-badge">BUNDLE</div>
+                    </div>
+                    <div class="merch-info">
+                        <h3>REBEL BUNDLE</h3>
+                        <p class="price">$75.00</p>
+                        <p class="merch-description">Album + Tee + Sticker Pack</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS SECTION -->
+    <section id="news" class="section dark-section">
+        <div class="container">
+            <h2 class="section-title glitch" data-text="LATEST NOISE">LATEST NOISE</h2>
+            
+            <div class="news-grid">
+                <article class="news-item featured">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1600779547877-be592ef5aad3" alt="New Album Announcement">
+                        <div class="news-date">MAR 10, 2024</div>
+                    </div>
+                    <div class="news-content">
+                        <h3>NEW ALBUM "BROKEN SYSTEM" OUT NOW!</h3>
+                        <p class="news-excerpt">Our most ambitious work yet - 12 tracks of pure rebellion against the machine. Recorded in legendary Studio X with producer Mike Fury.</p>
+                        <a href="#" class="read-more">READ MORE</a>
+                    </div>
+                </article>
+
+                <article class="news-item">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1558625332-9a35ee767f24" alt="Tour Announcement">
+                        <div class="news-date">FEB 28, 2024</div>
+                    </div>
+                    <div class="news-content">
+                        <h3>REBELLION TOUR 2024 ANNOUNCED</h3>
+                        <p class="news-excerpt">We're hitting the road this spring! 15 cities, bigger venues, louder than ever.</p>
+                        <a href="#" class="read-more">READ MORE</a>
+                    </div>
+                </article>
+
+                <article class="news-item">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1723902701334-08b0fe53ff4c" alt="Music Video">
+                        <div class="news-date">FEB 15, 2024</div>
+                    </div>
+                    <div class="news-content">
+                        <h3>"SYSTEM DOWN" MUSIC VIDEO DROPS</h3>
+                        <p class="news-excerpt">Directed by underground filmmaker Sarah Chaos, this visual manifesto is our boldest statement yet.</p>
+                        <a href="#" class="read-more">READ MORE</a>
+                    </div>
+                </article>
+
+                <article class="news-item">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1600528777391-4e35bf973e44" alt="Studio Update">
+                        <div class="news-date">JAN 30, 2024</div>
+                    </div>
+                    <div class="news-content">
+                        <h3>STUDIO SESSIONS: BEHIND THE CHAOS</h3>
+                        <p class="news-excerpt">Take a look inside our recording process and the madness that created our latest sound.</p>
+                        <a href="#" class="read-more">READ MORE</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title distorted" data-text="VISUAL REBELLION">VISUAL REBELLION</h2>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="live">LIVE SHOWS</button>
+                <button class="filter-btn" data-filter="studio">STUDIO</button>
+                <button class="filter-btn" data-filter="behind">BEHIND SCENES</button>
+                <button class="filter-btn" data-filter="fan">FAN ART</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item live" data-category="live">
+                    <img src="https://images.unsplash.com/photo-1600779547877-be592ef5aad3" alt="Live Performance">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Underground Club 2024</h4>
+                            <p>Live Performance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item studio" data-category="studio">
+                    <img src="https://images.unsplash.com/photo-1558625332-9a35ee767f24" alt="Studio Session">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Recording "Broken System"</h4>
+                            <p>Studio Session</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item live" data-category="live">
+                    <img src="https://images.unsplash.com/photo-1723902701334-08b0fe53ff4c" alt="Concert Crowd">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Crowd Energy</h4>
+                            <p>Live Show</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item behind" data-category="behind">
+                    <img src="https://images.unsplash.com/photo-1600528777391-4e35bf973e44" alt="Behind Scenes">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Backstage Moments</h4>
+                            <p>Behind the Scenes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item fan" data-category="fan">
+                    <img src="https://images.pexels.com/photos/1933589/pexels-photo-1933589.jpeg" alt="Fan Art">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Fan Creation</h4>
+                            <p>Fan Art</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item live" data-category="live">
+                    <img src="https://images.unsplash.com/photo-1600779547877-be592ef5aad3" alt="Stage Lights">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Stage Atmosphere</h4>
+                            <p>Live Performance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section dark-section">
+        <div class="container">
+            <h2 class="section-title glitch" data-text="JOIN THE REBELLION">JOIN THE REBELLION</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>GET IN TOUCH</h3>
+                    
+                    <div class="contact-item">
+                        <h4><i class="fas fa-music"></i> BOOKING INQUIRIES</h4>
+                        <p>booking@noiserebellion.com</p>
+                        <p>+1 (555) 123-ROCK</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4><i class="fas fa-briefcase"></i> MANAGEMENT</h4>
+                        <p>Sarah Chaos Management</p>
+                        <p>management@noiserebellion.com</p>
+                        <p>+1 (555) 456-MGMT</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4><i class="fas fa-newspaper"></i> PRESS & MEDIA</h4>
+                        <p>press@noiserebellion.com</p>
+                        <a href="#" class="press-kit-btn">DOWNLOAD PRESS KIT</a>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>FOLLOW THE NOISE</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-spotify"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>SEND US A MESSAGE</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="booking">Booking Inquiry</option>
+                                <option value="press">Press/Media</option>
+                                <option value="fan">Fan Message</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAN SECTION -->
+    <section id="fan" class="section">
+        <div class="container">
+            <h2 class="section-title distorted" data-text="REBEL ARMY">REBEL ARMY</h2>
+            
+            <div class="fan-content">
+                <div class="newsletter-signup">
+                    <h3>JOIN THE NOISE</h3>
+                    <p>Get exclusive access to new music, behind-the-scenes content, and early ticket sales.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <div class="newsletter-input">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn-primary">JOIN NOW</button>
+                        </div>
+                    </form>
+                    <p class="newsletter-perks">✓ Exclusive tracks ✓ Early access ✓ VIP pre-sales ✓ Behind-the-scenes content</p>
+                </div>
+
+                <div class="community-links">
+                    <h3>REBEL COMMUNITIES</h3>
+                    <div class="community-grid">
+                        <a href="#" class="community-card">
+                            <i class="fab fa-discord"></i>
+                            <h4>Discord Server</h4>
+                            <p>Chat with fellow rebels and get real-time updates</p>
+                        </a>
+                        <a href="#" class="community-card">
+                            <i class="fab fa-reddit"></i>
+                            <h4>Subreddit</h4>
+                            <p>Share, discuss, and connect with the community</p>
+                        </a>
+                        <a href="#" class="community-card">
+                            <i class="fab fa-facebook"></i>
+                            <h4>Facebook Group</h4>
+                            <p>Private group for die-hard fans</p>
+                        </a>
+                        <a href="#" class="community-card">
+                            <i class="fas fa-users"></i>
+                            <h4>Street Team</h4>
+                            <p>Help spread the rebellion in your city</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="exclusive-content">
+                    <h3>EXCLUSIVE FOR SUBSCRIBERS</h3>
+                    <div class="exclusive-preview">
+                        <div class="exclusive-item">
+                            <h4>🎵 Demo Tracks</h4>
+                            <p>Unreleased songs and alternative versions</p>
+                        </div>
+                        <div class="exclusive-item">
+                            <h4>📸 Photo Vault</h4>
+                            <p>Exclusive behind-the-scenes photos</p>
+                        </div>
+                        <div class="exclusive-item">
+                            <h4>🎬 Video Diaries</h4>
+                            <p>Personal messages and tour vlogs</p>
+                        </div>
+                        <div class="exclusive-item">
+                            <h4>🎫 VIP Access</h4>
+                            <p>Meet & greets and backstage passes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3 class="glitch" data-text="NOISE REBELLION">NOISE REBELLION</h3>
+                    <p>NOISE. TRUTH. REBELLION.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>MUSIC</h4>
+                        <ul>
+                            <li><a href="#music">Discography</a></li>
+                            <li><a href="#videos">Videos</a></li>
+                            <li><a href="#" target="_blank">Spotify</a></li>
+                            <li><a href="#" target="_blank">Apple Music</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>LIVE</h4>
+                        <ul>
+                            <li><a href="#tour">Tour Dates</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contact">Booking</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>CONNECT</h4>
+                        <ul>
+                            <li><a href="#fan">Newsletter</a></li>
+                            <li><a href="#news">News</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NOISE REBELLION. ALL RIGHTS RESERVED.</p>
+                <p>KEEP THE REBELLION ALIVE.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
