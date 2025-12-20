@@ -255,6 +255,8 @@ body {
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
 }
 
 .btn-primary, .btn-secondary {
@@ -314,6 +316,8 @@ body {
     left: 50%;
     transform: translateX(-50%);
     animation: bounce 2s infinite;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .scroll-indicator {
