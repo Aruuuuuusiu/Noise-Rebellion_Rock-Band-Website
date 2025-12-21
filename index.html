@@ -7,29 +7,29 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&family=Nosifer&family=Butcherman&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&family=Nosifer&family=Butcherman&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" data-testid="navbar">
         <div class="nav-container">
             <div class="logo">
                 <span class="glitch" data-text="NOISE REBELLION">NOISE REBELLION</span>
             </div>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link">HOME</a></li>
-                <li><a href="#about" class="nav-link">ABOUT</a></li>
-                <li><a href="#music" class="nav-link">MUSIC</a></li>
-                <li><a href="#videos" class="nav-link">VIDEOS</a></li>
-                <li><a href="#tour" class="nav-link">TOUR</a></li>
-                <li><a href="#merch" class="nav-link">MERCH</a></li>
-                <li><a href="#news" class="nav-link">NEWS</a></li>
-                <li><a href="#gallery" class="nav-link">GALLERY</a></li>
-                <li><a href="#contact" class="nav-link">CONTACT</a></li>
-                <li><a href="#fan" class="nav-link">FAN ZONE</a></li>
+                <li><a href="#home" class="nav-link" data-testid="nav-home">HOME</a></li>
+                <li><a href="#about" class="nav-link" data-testid="nav-about">ABOUT</a></li>
+                <li><a href="#music" class="nav-link" data-testid="nav-music">MUSIC</a></li>
+                <li><a href="#videos" class="nav-link" data-testid="nav-videos">VIDEOS</a></li>
+                <li><a href="#tour" class="nav-link" data-testid="nav-tour">TOUR</a></li>
+                <li><a href="#merch" class="nav-link" data-testid="nav-merch">MERCH</a></li>
+                <li><a href="#news" class="nav-link" data-testid="nav-news">NEWS</a></li>
+                <li><a href="#gallery" class="nav-link" data-testid="nav-gallery">GALLERY</a></li>
+                <li><a href="#contact" class="nav-link" data-testid="nav-contact">CONTACT</a></li>
+                <li><a href="#fan" class="nav-link" data-testid="nav-fan">FAN ZONE</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <div class="hamburger" id="hamburger" data-testid="hamburger-menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -38,7 +38,7 @@
     </nav>
 
     <!-- HOME SECTION -->
-    <section id="home" class="hero">
+    <section id="home" class="hero" data-testid="hero-section">
         <div class="hero-bg">
             <img src="/images/photo-1600779547877-be592ef5aad3.jpeg" alt="Live Stage" class="hero-image">
             <div class="hero-overlay"></div>
@@ -47,23 +47,19 @@
             <h1 class="hero-title glitch" data-text="NOISE REBELLION">NOISE REBELLION</h1>
             <p class="hero-tagline">NOISE. TRUTH. REBELLION.</p>
             <div class="hero-buttons">
-                <button class="btn-primary glitch-btn" onclick="scrollToSection('music')">
+                <button class="btn-primary glitch-btn" onclick="scrollToSection('music')" data-testid="listen-now-btn">
                     <i class="fas fa-play"></i> LISTEN NOW
                 </button>
-                <button class="btn-secondary" onclick="scrollToSection('tour')">
+                <button class="btn-secondary" onclick="scrollToSection('tour')" data-testid="tour-dates-btn">
                     <i class="fas fa-calendar"></i> TOUR DATES
                 </button>
             </div>
         </div>
-        <!-- <div class="hero-scroll">
-            <div class="scroll-indicator">
-                <i class="fas fa-chevron-down"></i>
-            </div>
-        </div> -->
+        
     </section>
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="section">
+    <section id="about" class="section" data-testid="about-section">
         <div class="container">
             <h2 class="section-title distorted" data-text="ABOUT THE REBELLION">ABOUT THE REBELLION</h2>
             
@@ -77,7 +73,7 @@
                 <div class="band-members">
                     <h3 class="subsection-title">The Rebels</h3>
                     <div class="members-grid">
-                        <div class="member-card">
+                        <div class="member-card" data-testid="member-alex">
                             <div class="member-image">
                                 <img src="/images/photo-1565022472425-b6ae14b4b050.avif" alt="Alex Thunder">
                                 <div class="member-overlay">
@@ -87,7 +83,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="member-card">
+                        <div class="member-card" data-testid="member-sam">
                             <div class="member-image">
                                 <img src="images/photo-1498038432885-c6f3f1b912ee.jpeg" alt="Sam Riot">
                                 <div class="member-overlay">
@@ -97,7 +93,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="member-card">
+                        <div class="member-card" data-testid="member-casey">
                             <div class="member-image">
                                 <img src="/images/photo-1619065513120-ad804c3f5e22.avif" alt="Casey Storm">
                                 <div class="member-overlay">
@@ -107,7 +103,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="member-card">
+                        <div class="member-card" data-testid="member-ava">
                             <div class="member-image">
                                 <img src="/images/photo-1687585612398-de4ba08bbc05.avif" alt="Jordan Chaos">
                                 <div class="member-overlay">
@@ -143,16 +139,16 @@
     </section>
 
     <!-- MUSIC SECTION -->
-    <section id="music" class="section dark-section">
+    <section id="music" class="section dark-section" data-testid="music-section">
         <div class="container">
             <h2 class="section-title glitch" data-text="DISCOGRAPHY">DISCOGRAPHY</h2>
             
             <div class="albums-grid">
-                <div class="album-card featured">
+                <div class="album-card featured" data-testid="album-chains-freedom">
                     <div class="album-cover">
                         <img src="/images/Black and White Paper Grunge Rock Music Album Cover.png" alt="Broken System Album">
                         <div class="play-overlay">
-                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                            <button class="play-btn" data-testid="play-chains-freedom"><i class="fas fa-play"></i></button>
                         </div>
                     </div>
                     <div class="album-info">
@@ -166,11 +162,11 @@
                     </div>
                 </div>
 
-                <div class="album-card">
+                <div class="album-card" data-testid="album-silent-anthems">
                     <div class="album-cover">
                         <img src="images/Black White 80s Aesthetic Music Album Cover.png" alt="Underground Anthems">
                         <div class="play-overlay">
-                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                            <button class="play-btn" data-testid="play-silent-anthems"><i class="fas fa-play"></i></button>
                         </div>
                     </div>
                     <div class="album-info">
@@ -207,16 +203,16 @@
     </section>
 
     <!-- VIDEOS SECTION -->
-    <section id="videos" class="section">
+    <section id="videos" class="section" data-testid="videos-section">
         <div class="container">
             <h2 class="section-title distorted" data-text="WATCH & DESTROY">WATCH & DESTROY</h2>
             
             <div class="videos-grid">
-                <div class="video-card featured">
+                <div class="video-card featured" data-testid="video-system-down">
                     <div class="video-thumbnail">
                         <img src="/images/Purple and Yellow Grunge Music Album Cover.png" alt="System Down Music Video">
                         <div class="play-overlay">
-                            <button class="play-btn large"><i class="fas fa-play"></i></button>
+                            <button class="play-btn large" data-testid="play-video-featured"><i class="fas fa-play"></i></button>
                         </div>
                         <div class="video-badge">NEW</div>
                     </div>
@@ -283,12 +279,12 @@
     </section>
 
     <!-- TOUR SECTION -->
-    <section id="tour" class="section dark-section">
+    <section id="tour" class="section dark-section" data-testid="tour-section">
         <div class="container">
             <h2 class="section-title glitch" data-text="REBELLION TOUR 2024">REBELLION TOUR 2024</h2>
             
             <div class="tour-dates">
-                <div class="tour-date upcoming">
+                <div class="tour-date upcoming" data-testid="tour-date-la">
                     <div class="date-info">
                         <div class="date">MAR<br><span>15</span></div>
                         <div class="venue">
@@ -298,11 +294,11 @@
                         </div>
                     </div>
                     <div class="ticket-btn">
-                        <button class="btn-secondary disabled">SOLD OUT</button>
+                        <button class="btn-secondary disabled" data-testid="ticket-btn-sold-out">SOLD OUT</button>
                     </div>
                 </div>
 
-                <div class="tour-date upcoming">
+                <div class="tour-date upcoming" data-testid="tour-date-portland">
                     <div class="date-info">
                         <div class="date">MAR<br><span>22</span></div>
                         <div class="venue">
@@ -312,7 +308,7 @@
                         </div>
                     </div>
                     <div class="ticket-btn">
-                        <button class="btn-primary">TICKETS</button>
+                        <button class="btn-primary" data-testid="ticket-btn-portland">TICKETS</button>
                     </div>
                 </div>
 
@@ -376,35 +372,35 @@
     </section>
 
     <!-- MERCH SECTION -->
-    <section id="merch" class="section">
+    <section id="merch" class="section" data-testid="merch-section">
         <div class="container">
-            <h2 class="section-title distorted" data-text="REBEL GEAR">REBEL GEAR</h2>
+            <h2 class="section-title distorted" data-text="OFFICIAL MERCH">OFFICIAL MERCH</h2>
             
             <div class="merch-grid">
-                <div class="merch-item featured">
+                <div class="merch-item featured" data-testid="merch-tshirt">
                     <div class="merch-image">
-                        <img src="https://images.unsplash.com/photo-1600779547877-be592ef5aad3" alt="Noise Rebellion T-Shirt">
+                        <img src="/images/NOISE REBELLION.png" alt="Broken System T-Shirt">
                         <div class="merch-overlay">
-                            <button class="btn-primary">QUICK VIEW</button>
+                            <button class="btn-primary" data-testid="quick-view-tshirt">QUICK VIEW</button>
                         </div>
-                        <div class="merch-badge">BEST SELLER</div>
+                        <div class="merch-badge">BESTSELLER</div>
                     </div>
                     <div class="merch-info">
-                        <h3>NOISE REBELLION TEE</h3>
-                        <p class="price">$25.00</p>
-                        <p class="merch-description">Premium black tee with distressed logo</p>
+                        <h3>REBELLION T-SHIRT</h3>
+                        <p class="price">$30.00</p>
+                        <p class="merch-description">100% cotton with distressed logo</p>
                     </div>
                 </div>
 
-                <div class="merch-item">
+                <div class="merch-item" data-testid="merch-hoodie">
                     <div class="merch-image">
-                        <img src="https://images.unsplash.com/photo-1558625332-9a35ee767f24" alt="Broken System Hoodie">
+                        <img src="/images/Add a heading.png" alt="Broken System Hoodie">
                         <div class="merch-overlay">
                             <button class="btn-primary">QUICK VIEW</button>
                         </div>
                     </div>
                     <div class="merch-info">
-                        <h3>BROKEN SYSTEM HOODIE</h3>
+                        <h3>CHAINS OF FREEDOM HOODIE</h3>
                         <p class="price">$45.00</p>
                         <p class="merch-description">Heavyweight pullover hoodie</p>
                     </div>
@@ -412,14 +408,14 @@
 
                 <div class="merch-item">
                     <div class="merch-image">
-                        <img src="https://images.unsplash.com/photo-1723902701334-08b0fe53ff4c" alt="Vinyl Record">
+                        <img src="/images/Black and White Paper Grunge Rock Music Album Cover.png" alt="Vinyl Record">
                         <div class="merch-overlay">
                             <button class="btn-primary">QUICK VIEW</button>
                         </div>
                         <div class="merch-badge">LIMITED</div>
                     </div>
                     <div class="merch-info">
-                        <h3>BROKEN SYSTEM VINYL</h3>
+                        <h3>CHAINS OF FREEDOM VINYL</h3>
                         <p class="price">$35.00</p>
                         <p class="merch-description">Limited edition red vinyl</p>
                     </div>
@@ -441,7 +437,7 @@
 
                 <div class="merch-item">
                     <div class="merch-image">
-                        <img src="https://images.pexels.com/photos/1933589/pexels-photo-1933589.jpeg" alt="Bundle Pack">
+                        <img src="/images/images.jpeg" alt="Bundle Pack">
                         <div class="merch-overlay">
                             <button class="btn-primary">QUICK VIEW</button>
                         </div>
@@ -458,18 +454,18 @@
     </section>
 
     <!-- NEWS SECTION -->
-    <section id="news" class="section dark-section">
+    <section id="news" class="section dark-section" data-testid="news-section">
         <div class="container">
             <h2 class="section-title glitch" data-text="LATEST NOISE">LATEST NOISE</h2>
             
             <div class="news-grid">
-                <article class="news-item featured">
+                <article class="news-item featured" data-testid="news-album">
                     <div class="news-image">
-                        <img src="https://images.unsplash.com/photo-1600779547877-be592ef5aad3" alt="New Album Announcement">
+                        <img src="/images/Black and White Paper Grunge Rock Music Album Cover.png" alt="New Album Announcement">
                         <div class="news-date">MAR 10, 2024</div>
                     </div>
                     <div class="news-content">
-                        <h3>NEW ALBUM "BROKEN SYSTEM" OUT NOW!</h3>
+                        <h3>NEW ALBUM "CHAINS OF FREEDOM" OUT NOW!</h3>
                         <p class="news-excerpt">Our most ambitious work yet - 12 tracks of pure rebellion against the machine. Recorded in legendary Studio X with producer Mike Fury.</p>
                         <a href="#" class="read-more">READ MORE</a>
                     </div>
@@ -477,11 +473,11 @@
 
                 <article class="news-item">
                     <div class="news-image">
-                        <img src="https://images.unsplash.com/photo-1558625332-9a35ee767f24" alt="Tour Announcement">
+                        <img src="/images/photo-1604514288114-3851479df2f2.jpg" alt="Tour Announcement">
                         <div class="news-date">FEB 28, 2024</div>
                     </div>
+                    <h3> REBELLION TOUR 2024 ANNOUNCED</h3>
                     <div class="news-content">
-                        <h3>REBELLION TOUR 2024 ANNOUNCED</h3>
                         <p class="news-excerpt">We're hitting the road this spring! 15 cities, bigger venues, louder than ever.</p>
                         <a href="#" class="read-more">READ MORE</a>
                     </div>
@@ -489,7 +485,7 @@
 
                 <article class="news-item">
                     <div class="news-image">
-                        <img src="https://images.unsplash.com/photo-1723902701334-08b0fe53ff4c" alt="Music Video">
+                        <img src="/images/photo-1723902701334-08b0fe53ff4c.jpeg" alt="Music Video">
                         <div class="news-date">FEB 15, 2024</div>
                     </div>
                     <div class="news-content">
@@ -501,7 +497,7 @@
 
                 <article class="news-item">
                     <div class="news-image">
-                        <img src="https://images.unsplash.com/photo-1600528777391-4e35bf973e44" alt="Studio Update">
+                        <img src="/images/photo-1600779547877-be592ef5aad3.jpeg" alt="Studio Update">
                         <div class="news-date">JAN 30, 2024</div>
                     </div>
                     <div class="news-content">
@@ -527,21 +523,21 @@
     </section>
 
     <!-- GALLERY SECTION -->
-    <section id="gallery" class="section">
+    <section id="gallery" class="section" data-testid="gallery-section">
         <div class="container">
             <h2 class="section-title distorted" data-text="VISUAL REBELLION">VISUAL REBELLION</h2>
             
             <div class="gallery-filters">
-                <button class="filter-btn active" data-filter="all">ALL</button>
-                <button class="filter-btn" data-filter="live">LIVE SHOWS</button>
-                <button class="filter-btn" data-filter="studio">STUDIO</button>
-                <button class="filter-btn" data-filter="behind">BEHIND SCENES</button>
-                <button class="filter-btn" data-filter="fan">FAN ART</button>
+                <button class="filter-btn active" data-filter="all" data-testid="filter-all">ALL</button>
+                <button class="filter-btn" data-filter="live" data-testid="filter-live">LIVE SHOWS</button>
+                <button class="filter-btn" data-filter="studio" data-testid="filter-studio">STUDIO</button>
+                <button class="filter-btn" data-filter="behind" data-testid="filter-behind">BEHIND SCENES</button>
+                <button class="filter-btn" data-filter="fan" data-testid="filter-fan">FAN ART</button>
             </div>
 
             <div class="gallery-grid">
                 <div class="gallery-item live" data-category="live">
-                    <img src="https://images.unsplash.com/photo-1600779547877-be592ef5aad3" alt="Live Performance">
+                    <img src="/images/premium_photo-1681503974118-bc4e8f010d40.avif" alt="Live Performance">
                     <div class="gallery-overlay">
                         <div class="gallery-info">
                             <h4>Underground Club 2024</h4>
@@ -551,7 +547,7 @@
                 </div>
 
                 <div class="gallery-item studio" data-category="studio">
-                    <img src="https://images.unsplash.com/photo-1558625332-9a35ee767f24" alt="Studio Session">
+                    <img src="/images/photo-1478737270239-2f02b77fc618.avif" alt="Studio Session">
                     <div class="gallery-overlay">
                         <div class="gallery-info">
                             <h4>Recording "Broken System"</h4>
@@ -561,7 +557,7 @@
                 </div>
 
                 <div class="gallery-item live" data-category="live">
-                    <img src="https://images.unsplash.com/photo-1723902701334-08b0fe53ff4c" alt="Concert Crowd">
+                    <img src="/images/premium_photo-1664303680697-213369cc512e.avif" alt="Concert Crowd">
                     <div class="gallery-overlay">
                         <div class="gallery-info">
                             <h4>Crowd Energy</h4>
@@ -571,7 +567,7 @@
                 </div>
 
                 <div class="gallery-item behind" data-category="behind">
-                    <img src="https://images.unsplash.com/photo-1600528777391-4e35bf973e44" alt="Behind Scenes">
+                    <img src="/images/photo-1620479331047-13a2036102c8.avif" alt="Behind Scenes">
                     <div class="gallery-overlay">
                         <div class="gallery-info">
                             <h4>Backstage Moments</h4>
@@ -581,7 +577,7 @@
                 </div>
 
                 <div class="gallery-item fan" data-category="fan">
-                    <img src="https://images.pexels.com/photos/1933589/pexels-photo-1933589.jpeg" alt="Fan Art">
+                    <img src="/images/pexels-photo-1933589.jpeg" alt="Fan Art">
                     <div class="gallery-overlay">
                         <div class="gallery-info">
                             <h4>Fan Creation</h4>
@@ -591,7 +587,7 @@
                 </div>
 
                 <div class="gallery-item live" data-category="live">
-                    <img src="https://images.unsplash.com/photo-1600779547877-be592ef5aad3" alt="Stage Lights">
+                    <img src="/images/photo-1584762017375-9125b7918bdc.avif" alt="Stage Lights">
                     <div class="gallery-overlay">
                         <div class="gallery-info">
                             <h4>Stage Atmosphere</h4>
@@ -604,7 +600,7 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="section dark-section">
+    <section id="contact" class="section dark-section" data-testid="contact-section">
         <div class="container">
             <h2 class="section-title glitch" data-text="JOIN THE REBELLION">JOIN THE REBELLION</h2>
             
@@ -634,27 +630,27 @@
                     <div class="social-links">
                         <h4>FOLLOW THE NOISE</h4>
                         <div class="social-icons">
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                            <a href="#"><i class="fab fa-spotify"></i></a>
-                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" data-testid="social-instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" data-testid="social-twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" data-testid="social-facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" data-testid="social-youtube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" data-testid="social-spotify"><i class="fab fa-spotify"></i></a>
+                            <a href="#" data-testid="social-tiktok"><i class="fab fa-tiktok"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact-form">
                     <h3>SEND US A MESSAGE</h3>
-                    <form id="contact-form">
+                    <form id="contact-form" data-testid="contact-form">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required data-testid="contact-name">
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required data-testid="contact-email">
                         </div>
                         <div class="form-group">
-                            <select id="subject" name="subject" required>
+                            <select id="subject" name="subject" required data-testid="contact-subject">
                                 <option value="">Select Subject</option>
                                 <option value="booking">Booking Inquiry</option>
                                 <option value="press">Press/Media</option>
@@ -663,9 +659,9 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required data-testid="contact-message"></textarea>
                         </div>
-                        <button type="submit" class="btn-primary">SEND MESSAGE</button>
+                        <button type="submit" class="btn-primary" data-testid="contact-submit">SEND MESSAGE</button>
                     </form>
                 </div>
             </div>
@@ -673,7 +669,7 @@
     </section>
 
     <!-- FAN SECTION -->
-    <section id="fan" class="section">
+    <section id="fan" class="section" data-testid="fan-section">
         <div class="container">
             <h2 class="section-title distorted" data-text="REBEL ARMY">REBEL ARMY</h2>
             
@@ -681,10 +677,10 @@
                 <div class="newsletter-signup">
                     <h3>JOIN THE NOISE</h3>
                     <p>Get exclusive access to new music, behind-the-scenes content, and early ticket sales.</p>
-                    <form class="newsletter-form" id="newsletter-form">
+                    <form class="newsletter-form" id="newsletter-form" data-testid="newsletter-form">
                         <div class="newsletter-input">
-                            <input type="email" placeholder="Enter your email" required>
-                            <button type="submit" class="btn-primary">JOIN NOW</button>
+                            <input type="email" placeholder="Enter your email" required data-testid="newsletter-email">
+                            <button type="submit" class="btn-primary" data-testid="newsletter-submit">JOIN NOW</button>
                         </div>
                     </form>
                     <p class="newsletter-perks">✓ Exclusive tracks ✓ Early access ✓ VIP pre-sales ✓ Behind-the-scenes content</p>
