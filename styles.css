@@ -1,10 +1,10 @@
-/* ==========================================
+/* 
    NOISE REBELLION - IMPROVED DESIGN STYLES
-   ========================================== */
+    */
 
-/* ==========================================
+/* 
    CUSTOM PROPERTIES & VARIABLES
-   ========================================== */
+    */
 * {
     margin: 0;
     padding: 0;
@@ -75,9 +75,9 @@
     --transition-slow: 500ms ease;
 }
 
-/* ==========================================
+/* 
    BASE STYLES
-   ========================================== */
+    */
 body {
     font-family: var(--font-body);
     background-color: var(--dark-bg);
@@ -89,9 +89,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* ==========================================
+/* 
    GLITCH EFFECTS - REFINED
-   ========================================== */
+    */
 .glitch {
     position: relative;
     color: var(--light-text);
@@ -155,9 +155,9 @@ body {
     }
 }
 
-/* ==========================================
+/* 
    DISTORTED TEXT EFFECT - REFINED
-   ========================================== */
+    */
 .distorted {
     font-family: var(--font-distorted);
     text-shadow: 
@@ -174,9 +174,9 @@ body {
     75% { transform: translate(-1px, -1px) rotate(-0.5deg); }
 }
 
-/* ==========================================
+/* 
    NAVIGATION - IMPROVED
-   ========================================== */
+    */
 .navbar {
     position: fixed;
     top: 0;
@@ -277,9 +277,9 @@ body {
     transform: rotate(-45deg) translate(8px, -8px);
 }
 
-/* ==========================================
+/* 
    HERO SECTION - ENHANCED
-   ========================================== */
+    */
 .hero {
     height: 100vh;
     min-height: 600px;
@@ -356,9 +356,9 @@ body {
     z-index: 10;
 }
 
-/* ==========================================
+/* 
    BUTTONS - MODERN DESIGN
-   ========================================== */
+    */
 .btn-primary, .btn-secondary {
     padding: 1.1rem 2.5rem;
     border: none;
@@ -444,9 +444,9 @@ body {
     }
 }
 
-/* ==========================================
+/* 
    SCROLL INDICATOR
-   ========================================== */
+    */
 .hero-scroll {
     position: absolute;
     bottom: var(--spacing-xl);
@@ -474,9 +474,9 @@ body {
     }
 }
 
-/* ==========================================
+/* 
    SECTIONS - IMPROVED LAYOUT
-   ========================================== */
+    */
 .section {
     padding: var(--spacing-3xl) 0;
     position: relative;
@@ -513,9 +513,9 @@ body {
     letter-spacing: 0.05em;
 }
 
-/* ==========================================
+/* 
    ABOUT SECTION
-   ========================================== */
+    */
 .about-content {
     display: grid;
     gap: var(--spacing-3xl);
@@ -645,9 +645,9 @@ body {
     margin-top: var(--spacing-sm);
 }
 
-/* ==========================================
+/* 
    MUSIC SECTION - ALBUMS & LYRICS
-   ========================================== */
+    */
 .albums-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -814,9 +814,9 @@ body {
     margin-bottom: var(--spacing-md);
 }
 
-/* ==========================================
+/* 
    VIDEOS SECTION
-   ========================================== */
+    */
 .videos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -898,9 +898,9 @@ body {
     font-size: 0.95rem;
 }
 
-/* ==========================================
+/* 
    TOUR SECTION
-   ========================================== */
+    */
 .tour-dates {
     display: grid;
     gap: var(--spacing-md);
@@ -1011,9 +1011,9 @@ body {
     font-size: 0.9rem;
 }
 
-/* ==========================================
+/* 
    MERCH SECTION
-   ========================================== */
+    */
 .merch-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1111,9 +1111,9 @@ body {
     line-height: 1.5;
 }
 
-/* ==========================================
+/* 
    NEWS SECTION
-   ========================================== */
+    */
 .news-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1204,9 +1204,9 @@ body {
     text-shadow: 0 0 10px var(--primary-color);
 }
 
-/* ==========================================
+/* 
    GALLERY SECTION
-   ========================================== */
+    */
 .gallery-filters {
     display: flex;
     justify-content: center;
@@ -1300,9 +1300,9 @@ body {
     font-weight: 500;
 }
 
-/* ==========================================
+/* 
    CONTACT SECTION
-   ========================================== */
+    */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1445,9 +1445,9 @@ body {
     min-height: 120px;
 }
 
-/* ==========================================
+/* 
    FAN SECTION
-   ========================================== */
+    */
 .fan-content {
     display: grid;
     gap: var(--spacing-3xl);
@@ -1608,9 +1608,9 @@ body {
     line-height: 1.6;
 }
 
-/* ==========================================
+/* 
    FOOTER
-   ========================================== */
+    */
 .footer {
     background: var(--darker-bg);
     padding: var(--spacing-3xl) 0 var(--spacing-md);
@@ -1682,9 +1682,9 @@ body {
     margin-bottom: var(--spacing-xs);
 }
 
-/* ==========================================
+/* 
    ANIMATIONS
-   ========================================== */
+    */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1700,9 +1700,9 @@ body {
     animation: fadeInUp 0.8s ease-out;
 }
 
-/* ==========================================
+/* 
    SCROLLBAR STYLING
-   ========================================== */
+    */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -1720,9 +1720,9 @@ body {
     background: var(--accent-red);
 }
 
-/* ==========================================
+/* 
    SELECTION STYLING
-   ========================================== */
+    */
 ::selection {
     background: var(--primary-color);
     color: white;
@@ -1733,9 +1733,9 @@ body {
     color: white;
 }
 
-/* ==========================================
+/* 
    RESPONSIVE DESIGN
-   ========================================== */
+    */
 @media (max-width: 1024px) {
     .album-card.featured,
     .video-card.featured,
@@ -1877,9 +1877,9 @@ body {
     }
 }
 
-/* ==========================================
+/* 
    UTILITY CLASSES
-   ========================================== */
+    */
 .text-center {
     text-align: center;
 }
@@ -1894,9 +1894,9 @@ body {
 .mb-3 { margin-bottom: var(--spacing-md); }
 .mb-4 { margin-bottom: var(--spacing-lg); }
 
-/* ==========================================
+/* 
    LOADING STATES & ENHANCEMENTS
-   ========================================== */
+    */
 body.loaded {
     animation: fadeIn 0.5s ease-out;
 }
