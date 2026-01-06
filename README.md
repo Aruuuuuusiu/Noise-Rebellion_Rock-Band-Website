@@ -61,7 +61,7 @@ You can run this project locally in just a few steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/noise-rebellion.git
+   git clone https://github.com/Aruuuuuusiu/noise-rebellion.git
 
 2. Open the project folder:
      ```bash
